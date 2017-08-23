@@ -385,12 +385,6 @@ document.getElementById("btnAnony").addEventListener("click", function () {
 
 });
 
-
-setInterval(function () {
-  Babble.getMessages(Babble.counter);
-  Babble.getStats();
-}, 10);
-
 function poll(counter) {
   var ret = [];
   sendAsync({
@@ -597,6 +591,10 @@ function sendAsync(props) {
       // });
       //if (request.status != 0)
       xhr.send(JSON.stringify(props.data));
+      setTimeout(function () {
+        Babble.getMessages(Babble.counter);
+        Babble.getStats();
+      }, 10);
     } catch (e) {
       // console.log('catch', e);
     }

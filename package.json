@@ -5,7 +5,7 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
+ "dependencies": {
     "chai": "^4.1.0",
     "concurrently": "^3.5.0",
     "mocha-sinon": "^2.0.0",
@@ -13,10 +13,11 @@
     "sinon": "^3.0.0"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
-    "chai-http": "^1.0.0",
+    "chai": "^4.1.1",
+    "chai-http": "^3.0.0",
     "concurrently": "^3.5.0",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.0"
   },
   "scripts": {
     "test": "mocha test/server/test.js && http-server -a localhost -p 8081 ",

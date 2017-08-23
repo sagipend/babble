@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "chai": "^4.1.0",
+    "concurrently": "^3.5.0",
     "mocha-sinon": "^2.0.0",
     "should-sinon": "^0.0.5",
     "sinon": "^3.0.0"
@@ -14,6 +15,7 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "chai-http": "^1.0.0",
+    "concurrently": "^3.5.0",
     "mocha": "^3.5.0"
   },
   "scripts": {
